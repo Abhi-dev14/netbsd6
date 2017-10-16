@@ -1,0 +1,2 @@
+post-configure:
+	/root/bin/fix-stack-protector ${WRKSRC}

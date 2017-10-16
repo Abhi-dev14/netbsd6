@@ -1,0 +1,3 @@
+A complete open-source implementation of the libunwind API currently exists for IA-64 Linux and is under development for Linux on x86, x86-64, and PPC64. Partial support for HP-UX and Linux on PA-RISC also exists.
+
+The source-code is released under the MIT open source license. In the normal spirit of an open-source program, we encourage contributions and enhancements to this library. Particularly we would like to see libunwind support for other platforms (linux and non-linux, support for other processor architectures). 

@@ -1,0 +1,4 @@
+@comment $NetBSD$
+etc/rc.d/matefixes
+share/examples/mate/21-mate-resolv
+share/examples/rc.d/printsearch

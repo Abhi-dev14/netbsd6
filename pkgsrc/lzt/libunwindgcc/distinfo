@@ -1,0 +1,7 @@
+$NetBSD$
+
+SHA1 (libunwind-1.2.tar.gz) = a33e52d7ecd18b9375508369b566eeb2cc6eec3b
+RMD160 (libunwind-1.2.tar.gz) = 800c9fbfdf0edbcedf9e29c968fafd2c0ce70b58
+SHA512 (libunwind-1.2.tar.gz) = 985d0817944e3cafd99aaa5642862d878972e0851f7954289247e808c9319f399ca29342395f0571cb6568a1104a82bd92d585936f2ca888dda37ac796fde0d4
+Size (libunwind-1.2.tar.gz) = 747369 bytes
+SHA1 (patch-Makefile.in) = 791302c9de6a1d55d75b062ffce173283dfaa98d

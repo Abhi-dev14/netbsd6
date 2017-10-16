@@ -1,0 +1,15 @@
+@comment $NetBSD$
+include/libunwind-common.h
+include/libunwind-coredump.h
+include/libunwind-dynamic.h
+include/libunwind-ptrace.h
+include/libunwind-x86.h
+include/libunwind.h
+include/unwind.h
+lib/libunwind-generic.a
+lib/libunwind-generic.so
+lib/libunwind-x86.la
+lib/libunwind.la
+lib/pkgconfig/libunwind-generic.pc
+lib/pkgconfig/libunwind.pc
+@pkgdir share/examples/rc.d

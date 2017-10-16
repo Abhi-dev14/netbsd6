@@ -1,0 +1,414 @@
+Script started on Sat Oct 14 21:59:15 2017
+=> Bootstrap dependency digest>=20010302: found digest-20160304
+=> Fetching mesa-11.2.2.tar.xz
+=> Checksum SHA1 OK for mesa-11.2.2.tar.xz
+=> Checksum RMD160 OK for mesa-11.2.2.tar.xz
+=> Checksum SHA512 OK for mesa-11.2.2.tar.xz
+===> Installing dependencies for MesaLib-11.2.2nb6
+==========================================================================
+The supported build options for MesaLib are:
+
+	dri llvm
+
+You can select which build options to use by setting PKG_DEFAULT_OPTIONS
+or the following variable.  Its current value is shown:
+
+	PKG_OPTIONS.MesaLib = -llvm -dri
+
+==========================================================================
+==========================================================================
+The following variables will affect the build process of this package,
+MesaLib-11.2.2nb6.  Their current value is shown below:
+
+        * PYTHON_VERSION_DEFAULT = 27
+
+Based on these variables, the following variables have been set:
+
+        * PYPACKAGE = python27
+
+You may want to abort the process now with CTRL-C and change their value
+before continuing.  Be sure to run `/usr/bin/make clean' after
+the changes.
+==========================================================================
+=> Tool dependency ccache-[0-9]*: found ccache-3.3.4
+=> Tool dependency libtool-base>=2.4.2nb9: found libtool-base-2.4.6
+=> Tool dependency bison>=1.0: found bison-3.0.4nb3
+=> Tool dependency gmake>=3.81: found gmake-4.1nb3
+=> Tool dependency pkgconf-[0-9]*: found pkgconf-1.3.5
+=> Build dependency py27-mako-[0-9]*: found py27-mako-1.0.7
+=> Build dependency x11-links>=1.06: found x11-links-1.06
+=> Build dependency python27>=2.7.1nb2: found python27-2.7.13nb1
+=> Build dependency xproto>=7.0.9: found xproto-7.0.31
+=> Build dependency xextproto>=7.0: found xextproto-7.3.0
+=> Build dependency inputproto>=1.4: found inputproto-2.3.2
+=> Build dependency cwrappers>=20150314: found cwrappers-20170611
+=> Full dependency libX11>=1.1: found libX11-1.6.5
+=> Full dependency libxcb>=1.6: found libxcb-1.12nb1
+=> Full dependency libXext>=0.99.0: found libXext-1.3.3
+===> Overriding tools for MesaLib-11.2.2nb6
+===> Extracting for MesaLib-11.2.2nb6
+===> Patching for MesaLib-11.2.2nb6
+=> Applying pkgsrc patches for MesaLib-11.2.2nb6
+===> Creating toolchain wrappers for MesaLib-11.2.2nb6
+===> Configuring for MesaLib-11.2.2nb6
+=> Renaming glapi-shared/libglapi in Makefiles
+INFO: [subst.mk:wrapper-bug] Nothing changed in ./src/gbm/Makefile.in.
+=> Fixing hardcoded /etc/drirc references
+INFO: [subst.mk:drirc] Nothing changed in ./src/mesa/drivers/dri/common/xmlconfig.c.
+=> Modifying GNU configure scripts to avoid --recheck
+=> Replacing config-guess with pkgsrc versions
+=> Replacing config-sub with pkgsrc versions
+=> Replacing install-sh with pkgsrc version
+=> Adding run-time search paths to pkg-config files.
+INFO: [subst.mk:_pkgconfig] Nothing changed in ./src/gallium/targets/d3dadapter9/d3d.pc.in.
+INFO: [subst.mk:_pkgconfig] Nothing changed in ./src/mesa/drivers/dri/dri.pc.in.
+checking build system type... i486--netbsdelf
+checking host system type... i486--netbsdelf
+checking target system type... i486--netbsdelf
+checking for a BSD-compatible install... /usr/bin/install -c -o root -g wheel
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... bin/install-sh -c -d
+checking for gawk... /usr/bin/awk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether UID '0' is supported by ustar format... yes
+checking whether GID '0' is supported by ustar format... yes
+checking how to create a ustar tar archive... plaintar
+checking whether make supports nested variables... (cached) yes
+checking for style of include used by make... GNU
+checking for i486--netbsdelf-gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking dependency style of gcc... gcc3
+checking for i486--netbsdelf-ar... no
+checking for i486--netbsdelf-lib... no
+checking for i486--netbsdelf-link... no
+checking for ar... ar
+checking the archiver (ar) interface... ar
+checking how to run the C preprocessor... gcc -E
+checking for i486--netbsdelf-gcc... (cached) gcc
+checking whether we are using the GNU C compiler... (cached) yes
+checking whether gcc accepts -g... (cached) yes
+checking for gcc option to accept ISO C89... (cached) none needed
+checking whether gcc understands -c and -o together... (cached) yes
+checking dependency style of gcc... (cached) gcc3
+checking whether we are using the GNU C++ compiler... yes
+checking whether c++ accepts -g... yes
+checking dependency style of c++... gcc3
+checking dependency style of gcc... gcc3
+checking for GNU make... make
+checking for python2.7... (cached) /usr/pkg/bin/python2.7
+checking for a sed that does not truncate output... /usr/bin/sed
+checking for special C compiler options needed for large files... no
+checking for _FILE_OFFSET_BITS value needed for large files... no
+checking how to print strings... printf
+checking for a sed that does not truncate output... (cached) /usr/bin/sed
+checking for grep that handles long lines and -e... (cached) /usr/bin/grep
+checking for egrep... (cached) /usr/bin/egrep
+checking for fgrep... /usr/bin/grep -F
+checking for ld used by gcc... /usr/work/graphics/MesaLib/work/.cwrapper/bin/ld
+checking if the linker (/usr/work/graphics/MesaLib/work/.cwrapper/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking whether ln -s works... yes
+checking the maximum length of command line arguments... (cached) 262144
+checking how to convert i486--netbsdelf file names to i486--netbsdelf format... func_convert_file_noop
+checking how to convert i486--netbsdelf file names to toolchain format... func_convert_file_noop
+checking for /usr/work/graphics/MesaLib/work/.cwrapper/bin/ld option to reload object files... -r
+checking for i486--netbsdelf-objdump... no
+checking for objdump... objdump
+checking how to recognize dependent libraries... match_pattern /lib[^/]+(\.so|_pic\.a)$
+checking for i486--netbsdelf-dlltool... no
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for i486--netbsdelf-ar... ar
+checking for archiver @FILE support... @
+checking for i486--netbsdelf-strip... no
+checking for strip... strip
+checking for i486--netbsdelf-ranlib... no
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for i486--netbsdelf-mt... no
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... rm: conftest*: No such file or directory
+yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/work/graphics/MesaLib/work/.cwrapper/bin/ld) supports shared libraries... yes
+checking whether -lc should be explicitly linked in... rm: conftest*: No such file or directory
+no
+checking dynamic linker characteristics... NetBSD ld.elf_so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... no
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... yes
+checking whether to build static libraries... no
+checking how to run the C++ preprocessor... c++ -E
+checking for ld used by c++... /usr/work/graphics/MesaLib/work/.cwrapper/bin/ld
+checking if the linker (/usr/work/graphics/MesaLib/work/.cwrapper/bin/ld) is GNU ld... yes
+checking whether the c++ linker (/usr/work/graphics/MesaLib/work/.cwrapper/bin/ld) supports shared libraries... yes
+checking for c++ option to produce PIC... -fPIC -DPIC
+checking if c++ PIC flag -fPIC -DPIC works... yes
+checking if c++ static flag -static works... no
+checking if c++ supports -c -o file.o... rm: conftest*: No such file or directory
+yes
+checking if c++ supports -c -o file.o... (cached) yes
+checking whether the c++ linker (/usr/work/graphics/MesaLib/work/.cwrapper/bin/ld) supports shared libraries... yes
+checking dynamic linker characteristics... NetBSD ld.elf_so
+checking how to hardcode library paths into programs... immediate
+checking for rm... /bin/rm
+checking for bison... /usr/pkg/bin/bison -y
+checking if bison is the parser generator... yes
+checking for flex... flex
+checking lex output file root... lex.yy
+checking lex library... -lfl
+checking whether yytext is a pointer... yes
+checking if flex is the lexer generator... yes
+checking for indent... indent
+indent: Command line: unknown parameter "--version"
+checking if module mako in python is installed... yes
+checking if compiling with clang... no
+checking whether gcc version is sufficient... yes
+checking whether __SUNPRO_C is declared... no
+checking for __builtin_bswap32... yes
+checking for __builtin_bswap64... yes
+checking for __builtin_clz... yes
+checking for __builtin_clzll... yes
+checking for __builtin_ctz... yes
+checking for __builtin_expect... yes
+checking for __builtin_ffs... yes
+checking for __builtin_ffsll... yes
+checking for __builtin_popcount... yes
+checking for __builtin_popcountll... yes
+checking for __builtin_unreachable... yes
+checking for __attribute__((const))... yes
+checking for __attribute__((flatten))... yes
+checking for __attribute__((format))... yes
+checking for __attribute__((malloc))... yes
+checking for __attribute__((packed))... yes
+checking for __attribute__((pure))... yes
+checking for __attribute__((unused))... yes
+checking for __attribute__((warn_unused_result))... yes
+checking pkg-config is at least version 0.9.0... yes
+checking whether gcc supports -Werror=missing-prototypes... yes
+checking whether gcc supports -fvisibility=hidden... yes
+checking whether gcc supports -Werror=vla... yes
+checking whether c++ supports -fvisibility=hidden... yes
+checking whether byte ordering is bigendian... no
+checking whether gcc supports -mpower8-vector... no
+checking if ld supports -Bsymbolic... yes
+checking whether ld supports --gc-sections... yes
+checking if the linker supports version-scripts... yes
+checking if the linker supports --dynamic-list... yes
+checking whether to enable assembly... yes, x86
+checking xlocale.h usability... no
+checking xlocale.h presence... no
+checking for xlocale.h... no
+checking sys/sysctl.h usability... yes
+checking sys/sysctl.h presence... yes
+checking for sys/sysctl.h... yes
+checking for strtof... yes
+checking for mkostemp... no
+checking for dlopen... yes
+checking for dladdr... yes
+checking for clock_gettime... yes
+checking for posix_memalign... yes
+checking for pthread_join in LIBS= with CFLAGS= -pthread ... yes
+checking for joinable pthread attribute... PTHREAD_CREATE_JOINABLE
+checking if more special flags are required for pthreads... no
+checking for PTHREAD_PRIO_INHERIT... no
+checking for LIBDRM... no
+checking for SHA1Init... yes
+checking for CC_SHA1_Init... no
+checking for wincrypt.h... no
+checking for SHA1Init in -lmd... no
+checking for LIBSHA1... no
+checking for nettle_sha1_init in -lnettle... no
+checking for gcry_md_open in -lgcrypt... no
+checking for SHA1_Init in -lcrypto... yes
+checking for OPENSSL... no
+checking for SHA1 implementation... libc
+checking for LIBUDEV... no
+checking for LIBDEVQ... no
+Please specify at least one package name on the command line.
+--print-errors: not found
+checking for XLIBGL... yes
+checking for LIBELF... no
+checking for elf_memory in -lelf... yes
+checking for WAYLAND_SCANNER... no
+checking for wayland-scanner... no
+Package libva was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libva.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libva', required by 'virtual:world', not found
+Package libva was not found in the pkg-config search path.
+Perhaps you should add the directory containing `libva.pc'
+to the PKG_CONFIG_PATH environment variable
+Package 'libva', required by 'virtual:world', not found
+checking that generated files are newer than configure... done
+configure: creating ./config.status
+config.status: creating Makefile
+config.status: creating src/Makefile
+config.status: creating src/compiler/Makefile
+config.status: creating src/egl/Makefile
+config.status: creating src/egl/main/egl.pc
+config.status: creating src/egl/wayland/wayland-drm/Makefile
+config.status: creating src/egl/wayland/wayland-egl/Makefile
+config.status: creating src/egl/wayland/wayland-egl/wayland-egl.pc
+config.status: creating src/gallium/Makefile
+config.status: creating src/gallium/auxiliary/Makefile
+config.status: creating src/gallium/auxiliary/pipe-loader/Makefile
+config.status: creating src/gallium/drivers/freedreno/Makefile
+config.status: creating src/gallium/drivers/ddebug/Makefile
+config.status: creating src/gallium/drivers/i915/Makefile
+config.status: creating src/gallium/drivers/ilo/Makefile
+config.status: creating src/gallium/drivers/llvmpipe/Makefile
+config.status: creating src/gallium/drivers/noop/Makefile
+config.status: creating src/gallium/drivers/nouveau/Makefile
+config.status: creating src/gallium/drivers/r300/Makefile
+config.status: creating src/gallium/drivers/r600/Makefile
+config.status: creating src/gallium/drivers/radeon/Makefile
+config.status: creating src/gallium/drivers/radeonsi/Makefile
+config.status: creating src/gallium/drivers/rbug/Makefile
+config.status: creating src/gallium/drivers/softpipe/Makefile
+config.status: creating src/gallium/drivers/svga/Makefile
+config.status: creating src/gallium/drivers/trace/Makefile
+config.status: creating src/gallium/drivers/vc4/Makefile
+config.status: creating src/gallium/drivers/virgl/Makefile
+config.status: creating src/gallium/state_trackers/clover/Makefile
+config.status: creating src/gallium/state_trackers/dri/Makefile
+config.status: creating src/gallium/state_trackers/glx/xlib/Makefile
+config.status: creating src/gallium/state_trackers/nine/Makefile
+config.status: creating src/gallium/state_trackers/omx/Makefile
+config.status: creating src/gallium/state_trackers/osmesa/Makefile
+config.status: creating src/gallium/state_trackers/va/Makefile
+config.status: creating src/gallium/state_trackers/vdpau/Makefile
+config.status: creating src/gallium/state_trackers/xa/Makefile
+config.status: creating src/gallium/state_trackers/xvmc/Makefile
+config.status: creating src/gallium/targets/d3dadapter9/Makefile
+config.status: creating src/gallium/targets/d3dadapter9/d3d.pc
+config.status: creating src/gallium/targets/dri/Makefile
+config.status: creating src/gallium/targets/libgl-xlib/Makefile
+config.status: creating src/gallium/targets/omx/Makefile
+config.status: creating src/gallium/targets/opencl/Makefile
+config.status: creating src/gallium/targets/opencl/mesa.icd
+config.status: creating src/gallium/targets/osmesa/Makefile
+config.status: creating src/gallium/targets/osmesa/osmesa.pc
+config.status: creating src/gallium/targets/pipe-loader/Makefile
+config.status: creating src/gallium/targets/va/Makefile
+config.status: creating src/gallium/targets/vdpau/Makefile
+config.status: creating src/gallium/targets/xa/Makefile
+config.status: creating src/gallium/targets/xa/xatracker.pc
+config.status: creating src/gallium/targets/xvmc/Makefile
+config.status: creating src/gallium/tests/trivial/Makefile
+config.status: creating src/gallium/tests/unit/Makefile
+config.status: creating src/gallium/winsys/freedreno/drm/Makefile
+config.status: creating src/gallium/winsys/i915/drm/Makefile
+config.status: creating src/gallium/winsys/intel/drm/Makefile
+config.status: creating src/gallium/winsys/nouveau/drm/Makefile
+config.status: creating src/gallium/winsys/radeon/drm/Makefile
+config.status: creating src/gallium/winsys/amdgpu/drm/Makefile
+config.status: creating src/gallium/winsys/svga/drm/Makefile
+config.status: creating src/gallium/winsys/sw/dri/Makefile
+config.status: creating src/gallium/winsys/sw/kms-dri/Makefile
+config.status: creating src/gallium/winsys/sw/null/Makefile
+config.status: creating src/gallium/winsys/sw/wrapper/Makefile
+config.status: creating src/gallium/winsys/sw/xlib/Makefile
+config.status: creating src/gallium/winsys/vc4/drm/Makefile
+config.status: creating src/gallium/winsys/virgl/drm/Makefile
+config.status: creating src/gallium/winsys/virgl/vtest/Makefile
+config.status: creating src/gbm/Makefile
+config.status: creating src/gbm/main/gbm.pc
+config.status: creating src/glx/Makefile
+config.status: creating src/glx/apple/Makefile
+config.status: creating src/glx/tests/Makefile
+config.status: creating src/gtest/Makefile
+config.status: creating src/loader/Makefile
+config.status: creating src/mapi/Makefile
+config.status: creating src/mapi/es1api/glesv1_cm.pc
+config.status: creating src/mapi/es2api/glesv2.pc
+config.status: creating src/mapi/glapi/gen/Makefile
+config.status: creating src/mesa/Makefile
+config.status: creating src/mesa/gl.pc
+config.status: creating src/mesa/drivers/dri/dri.pc
+config.status: creating src/mesa/drivers/dri/common/Makefile
+config.status: creating src/mesa/drivers/dri/common/xmlpool/Makefile
+config.status: creating src/mesa/drivers/dri/i915/Makefile
+config.status: creating src/mesa/drivers/dri/i965/Makefile
+config.status: creating src/mesa/drivers/dri/Makefile
+config.status: creating src/mesa/drivers/dri/nouveau/Makefile
+config.status: creating src/mesa/drivers/dri/r200/Makefile
+config.status: creating src/mesa/drivers/dri/radeon/Makefile
+config.status: creating src/mesa/drivers/dri/swrast/Makefile
+config.status: creating src/mesa/drivers/osmesa/Makefile
+config.status: creating src/mesa/drivers/osmesa/osmesa.pc
+config.status: creating src/mesa/drivers/x11/Makefile
+config.status: creating src/mesa/main/tests/Makefile
+config.status: creating src/util/Makefile
+config.status: creating src/util/tests/hash_table/Makefile
+config.status: executing depfiles commands
+config.status: executing libtool commands
+rm: libtoolT: No such file or directory
+
+        prefix:          /usr/pkg
+        exec_prefix:     ${prefix}
+        libdir:          ${exec_prefix}/lib
+        includedir:      ${prefix}/include
+
+        OpenGL:          yes (ES1: no ES2: no)
+
+        OSMesa:          no
+
+        GLX:             Xlib-based
+
+        EGL:             no
+
+        llvm:            no
+
+        Gallium:         no
+
+        Shader cache:    yes
+        With SHA1 from:  libc
+
+        Shared libs:     yes
+        Static libs:     no
+        Shared-glapi:    yes
+
+        CFLAGS:          -O2 -march=i486 -mtune=generic -Wno-error -Wno-unused-value -I/usr/pkg/include -I/usr/include -I/usr/X11R7/include -Wall -std=gnu99 -Werror=implicit-function-declaration -Werror=missing-prototypes -fno-strict-aliasing -fno-math-errno -fno-trapping-math -fno-builtin-memcmp
+        CXXFLAGS:        -O2 -march=i486 -mtune=generic -Wno-error -Wno-unused-value -I/usr/pkg/include -I/usr/include -I/usr/X11R7/include -Wno-narrowing -Wno-delete-non-virtual-dtor -Wno-undef -Wno-shadow -Wno-strict-aliasing -Wno-unused-variable -Wno-unused-value -Wno-unused-function -Wall -fno-strict-aliasing -fno-builtin-memcmp
+        Macros:          -D__STDC_LIMIT_MACROS -D__STDC_CONSTANT_MACROS -DUSE_SSE41 -DNDEBUG -DUSE_X86_ASM -DUSE_MMX_ASM -DUSE_3DNOW_ASM -DUSE_SSE_ASM -DHAVE_SYS_SYSCTL_H -DHAVE_STRTOF -DHAVE_DLOPEN -DHAVE_POSIX_MEMALIGN -DHAVE_SHA1 -DUSE_XSHM -DGLX_X86_READONLY_TEXT -DMESA_EGL_NO_X11_HEADERS
+
+        PYTHON2:         /usr/pkg/bin/python2.7
+
+        Run 'make' to build Mesa
+
+=> Modifying libtool scripts to use pkgsrc libtool
+=> Modifying libtool scripts to use pkgsrc depcomp
+
+Script done on Sat Oct 14 21:59:34 2017

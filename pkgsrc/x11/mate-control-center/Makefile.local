@@ -1,0 +1,2 @@
+pre-configure:
+	ln -fs /usr/pkg/lib/pkgconfig/xi.pc ${BUILDLINK_DIR}/lib/pkgconfig

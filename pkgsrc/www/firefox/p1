@@ -1,0 +1,4 @@
+cd /usr/work/www/firefox/work/firefox-55.0.3
+find AUTHORS 'Android.mk' CLOBBER GNUmakefile LEGAL LICENSE 'Makefile.in' 'README.txt' accessible 'aclocal.m4' addon-sdk browser build 'build.gradle' caps chrome 'client.mk' 'client.py' config configure 'configure.in' 'configure.py' db devtools docshell dom editor embedding extensions gfx gradle 'gradle.properties' gradlew hal image intl ipc js layout mach media memory mfbt mobile modules 'moz.build' 'moz.configure' mozglue 'mozilla-config.h.in' netwerk 'npm-shrinkwrap.json' nsprpub old-configure 'old-configure.in' 'old-configure.in.orig' other-licenses 'package.json' parser probes python rdf security services servo 'settings.gradle' 'sourcestamp.txt' startupcache storage taskcluster 'test.mozbuild' testing 'third_party' toolkit tools uriloader view widget xpcom xpfe -name '*.h' -o -name '*.c' -o -name '*.cpp' -print0 | \
+xargs -0 grep CodecDescription.h | \
+sort -u

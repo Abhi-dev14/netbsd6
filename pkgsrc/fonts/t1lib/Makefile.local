@@ -1,0 +1,1 @@
+.include	"../../x11/libXaw/buildlink3.mk"
