@@ -1,4 +1,14 @@
-# $NetBSD: buildlink3.mk,v 1.1 2013/05/31 01:10:55 rodent Exp $
+# $NetBSD$
+# XXX
+# XXX This file was created automatically using createbuildlink-3.17.
+# XXX After this file has been verified as correct, the comment lines
+# XXX beginning with "XXX" should be removed.  Please do not commit
+# XXX unverified buildlink3.mk files.
+# XXX
+# XXX Packages that only install static libraries or headers should
+# XXX include the following line:
+# XXX
+# XXX	BUILDLINK_DEPMETHOD.libXfontcache?=	build
 
 BUILDLINK_TREE+=	libXfontcache
 
@@ -8,6 +18,14 @@ LIBXFONTCACHE_BUILDLINK3_MK:=
 BUILDLINK_API_DEPENDS.libXfontcache+=	libXfontcache>=1.0.5
 BUILDLINK_PKGSRCDIR.libXfontcache?=	../../fonts/libXfontcache
 
+# XXX
+# XXX Uncomment and keep only the buildlink3 lines below which are directly
+# XXX needed for dependencies to compile, link, and run.  If this package
+# XXX provides a wrappered API or otherwise does not expose the APIs of the
+# XXX buildlink3 lines below to dependencies, remove them.
+# XXX
+.include "../../x11/fontcacheproto/buildlink3.mk"
+.include "../../x11/xextproto/buildlink3.mk"
 .include "../../x11/libXext/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .endif	# LIBXFONTCACHE_BUILDLINK3_MK
