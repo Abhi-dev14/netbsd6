@@ -75,8 +75,10 @@ ${PYSITELIB}/electrum/locale/sl_SI/LC_MESSAGES/electrum.mo
 ${PYSITELIB}/electrum/locale/ta_IN/LC_MESSAGES/electrum.mo
 ${PYSITELIB}/electrum/locale/th_TH/LC_MESSAGES/electrum.mo
 ${PYSITELIB}/electrum/locale/tr_TR/LC_MESSAGES/electrum.mo
+${PYSITELIB}/electrum/locale/uk_UA/LC_MESSAGES/electrum.mo
 ${PYSITELIB}/electrum/locale/vi_VN/LC_MESSAGES/electrum.mo
 ${PYSITELIB}/electrum/locale/zh_CN/LC_MESSAGES/electrum.mo
+${PYSITELIB}/electrum/locale/zh_TW/LC_MESSAGES/electrum.mo
 ${PYSITELIB}/electrum/mnemonic.py
 ${PYSITELIB}/electrum/mnemonic.pyc
 ${PYSITELIB}/electrum/mnemonic.pyo
@@ -110,6 +112,9 @@ ${PYSITELIB}/electrum/qrscanner.pyo
 ${PYSITELIB}/electrum/rsakey.py
 ${PYSITELIB}/electrum/rsakey.pyc
 ${PYSITELIB}/electrum/rsakey.pyo
+${PYSITELIB}/electrum/segwit_addr.py
+${PYSITELIB}/electrum/segwit_addr.pyc
+${PYSITELIB}/electrum/segwit_addr.pyo
 ${PYSITELIB}/electrum/simple_config.py
 ${PYSITELIB}/electrum/simple_config.pyc
 ${PYSITELIB}/electrum/simple_config.pyo
@@ -361,3 +366,4 @@ ${PYSITELIB}/electrum_plugins/virtualkeyboard/qt.pyc
 ${PYSITELIB}/electrum_plugins/virtualkeyboard/qt.pyo
 share/applications/electrum.desktop
 share/pixmaps/electrum.png
+@pkgdir share/examples/rc.d
