@@ -27,6 +27,7 @@ do-install:
 	${RUN}cd ${WRKSRC}/glm && \
 		pax -rw *hpp detail gtc gtx \
 			${DESTDIR}${PREFIX}/${GLM_DIR}
+	find ${DESTDIR}${PREFIX}/${GLM_DIR} -name "*.orig" | xargs rm -v
 
 # for test target
 USE_LANGUAGES=	c c++
