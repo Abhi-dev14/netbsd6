@@ -22,6 +22,8 @@ USE_LANGUAGES=	c c++
 MAKE_ENV+=	FREETYPE_CONFIG=${FREETYPE_CONFIG:Q}
 LDFLAGS+=	${BUILDLINK_LDADD.getopt}
 
+CFLAGS+=	-Wno-write-strings
+
 INSTALLATION_DIRS=	bin
 
 do-install:

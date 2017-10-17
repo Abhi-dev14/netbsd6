@@ -1127,11 +1127,11 @@ TOOLS_PATH.iceauth=		${LOCALBASE}/bin/iceauth
 MAKEFLAGS+=		TOOLS_IGNORE.mkfontdir=
 .  elif !empty(_TOOLS_USE_PKGSRC.mkfontdir:M[yY][eE][sS])
 TOOLS_CREATE+=			mkfontdir
-.    if !empty(X11_TYPE:Mnative)
-TOOLS_PATH.mkfontdir=	${X11BASE}/bin/mkfontdir
+.    if (!empty(X11_TYPE:Mnative)) && (empty(USE_PKGSRC.mkfontdir))
+TOOLS_PATH.mkfontdir?=	${X11BASE}/bin/mkfontdir
 .    else
 TOOLS_DEPENDS.mkfontdir?=	mkfontdir-[0-9]*:../../fonts/mkfontdir
-TOOLS_PATH.mkfontdir=		${LOCALBASE}/bin/mkfontdir
+TOOLS_PATH.mkfontdir?=		${LOCALBASE}/bin/mkfontdir
 .    endif
 .  endif
 .endif

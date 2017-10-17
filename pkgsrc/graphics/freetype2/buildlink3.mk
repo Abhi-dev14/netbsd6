@@ -17,6 +17,11 @@ FREETYPE2_BUILDLINK3_MK:=
 
 BUILDLINK_API_DEPENDS.freetype2+=	freetype2>=2.8
 BUILDLINK_PKGSRCDIR.freetype2?=	../../graphics/freetype2
+TCFLAGS!=	/usr/pkg/bin/pkg-config --cflags freetype2
+TLDFLAGS!=	/usr/pkg/bin/pkg-config --libs freetype2
+
+CFLAGS+=	${TCFLAGS}
+LDFLAGS+=	${TLDFLAGS}
 
 # XXX
 # XXX Uncomment and keep only the buildlink3 lines below which are directly
