@@ -6,7 +6,7 @@ PKG_SUPPORTED_OPTIONS=	cups debug gtk2
 .include "../../mk/bsd.options.mk"
 
 .if !empty(PKG_OPTIONS:Mcups)
-.  include "../../print/cups15/buildlink3.mk"
+.  include "../../print/cups/buildlink3.mk"
 CONFIGURE_ARGS+=	-cups
 .else
 CONFIGURE_ARGS+=	-no-cups
