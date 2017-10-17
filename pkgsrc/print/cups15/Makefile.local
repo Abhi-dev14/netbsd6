@@ -1,2 +1,3 @@
+PKG_FAIL_REASON=	"Use CUPS2.0 not ${PKGNAME}"
 post-configure:
 	/root/bin/fix-stack-protector ${WRKSRC}

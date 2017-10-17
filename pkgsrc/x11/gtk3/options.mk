@@ -13,7 +13,7 @@ PKG_SUGGESTED_OPTIONS=		gtk3-atk-bridge x11
 
 PLIST_VARS+=		cups
 .if !empty(PKG_OPTIONS:Mcups)
-.include "../../print/cups15/buildlink3.mk"
+.include "../../print/cups/buildlink3.mk"
 PLIST.cups=		yes
 .else
 CONFIGURE_ENV+=		ac_cv_path_CUPS_CONFIG=no
