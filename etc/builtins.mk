@@ -83,3 +83,5 @@ USE_BUILTIN.xcb-util036:=		no
 USE_BUILTIN.libxkbcommon:=		no
 USE_BUILTIN.libxkbfile:=		no
 USE_BUILTIN.libxkbui:=		no
+USE_BUILTIN.libXScrnSaver:=		no
+USE_BUILTIN.freetype2:=		no
