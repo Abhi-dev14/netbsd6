@@ -22,6 +22,6 @@ INSTALLATION_DIRS+=	${DOCDIR}
 post-install:
 	cd ${WRKSRC} && ${INSTALL_DATA} LICENSE README ${DESTDIR}${DOCDIR}
 
-.include "../../print/cups15/buildlink3.mk"
+.include "../../print/cups/buildlink3.mk"
 .include "../../x11/fltk/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

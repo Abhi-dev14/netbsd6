@@ -27,7 +27,7 @@ do-configure:
 .include "../../graphics/djvulibre-lib/buildlink3.mk"
 .include "../../graphics/hicolor-icon-theme/buildlink3.mk"
 .include "../../graphics/librsvg/buildlink3.mk"
-.include "../../print/cups15/buildlink3.mk"
+.include "../../print/cups/buildlink3.mk"
 .include "../../print/libspectre/buildlink3.mk"
 .include "../../print/poppler-qt4/buildlink3.mk"
 .include "../../x11/qt4-libs/buildlink3.mk"

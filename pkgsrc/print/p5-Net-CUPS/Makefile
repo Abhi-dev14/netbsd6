@@ -19,6 +19,6 @@ EXTRACT_USING= bsdtar
 BUILDLINK_DEPMETHOD.cups-filters= build # image.h
 .include "../../print/cups-filters/buildlink3.mk"
 .include "../../converters/libiconv/buildlink3.mk"
-.include "../../print/cups15/buildlink3.mk"
+.include "../../print/cups/buildlink3.mk"
 .include "../../lang/perl5/module.mk"
 .include "../../mk/bsd.pkg.mk"

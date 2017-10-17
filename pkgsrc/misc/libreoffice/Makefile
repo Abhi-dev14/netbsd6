@@ -329,7 +329,7 @@ BUILDLINK_API_DEPENDS.libetonyek+=	libetonyek>=0.1.2
 .include "../../net/libcmis/buildlink3.mk"
 .include "../../net/mDNSResponder/buildlink3.mk"
 .if !empty(PKG_OPTIONS:Mcups)
-.include "../../print/cups15/buildlink3.mk"
+.include "../../print/cups/buildlink3.mk"
 .endif
 .include "../../print/poppler-cpp/buildlink3.mk"
 .include "../../print/poppler-includes/buildlink3.mk"

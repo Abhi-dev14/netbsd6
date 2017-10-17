@@ -94,7 +94,7 @@ BUILD_DEPENDS+=	zyGrib-[0-9]*:../../misc/zyGrib
 BUILD_DEPENDS+=	mplayer-[0-9]*:../../multimedia/mplayer
 BUILD_DEPENDS+=	xine-ui-[0-9]*:../../multimedia/xine-ui
 BUILD_DEPENDS+=	gstreamer0.10-plugins-[0-9]*:../../meta-pkgs/gstreamer0.10-plugins
-BUILD_DEPENDS+=	cups>=1.5<2.0:../../print/cups15
+BUILD_DEPENDS+=	cups>=1.5<2.0:../../print/cups
 BUILD_DEPENDS+=	evince>=2<3:../../print/evince
 BUILD_DEPENDS+=	lilypond-[0-9]*:../../print/lilypond
 BUILD_DEPENDS+=	mit-krb5-appl-[0-9]*:../../security/mit-krb5-appl

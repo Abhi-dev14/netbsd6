@@ -39,7 +39,7 @@ post-install:
 	${INSTALL_DATA} ${WRKSRC}/scribus/icons/scribus.png \
 		${DESTDIR}${PREFIX}/share/pixmaps
 
-.include "../../print/cups15/buildlink3.mk"
+.include "../../print/cups/buildlink3.mk"
 .include "../../graphics/cairo/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"
 BUILDLINK_API_DEPENDS.libart+= libart>=2.3.19nb1

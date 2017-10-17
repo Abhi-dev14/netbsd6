@@ -96,6 +96,6 @@ TEST_TARGET=		check
 .include "../../x11/gtk2/buildlink3.mk"
 
 # gutenprint-cups: cups support
-.include "../../print/cups15/buildlink3.mk"
+.include "../../print/cups/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

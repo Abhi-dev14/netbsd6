@@ -19,5 +19,5 @@ PKGCONFIG_OVERRIDE=	libgnomecups-1.0.pc.in
 
 .include "../../devel/gettext-lib/buildlink3.mk"
 .include "../../devel/glib2/buildlink3.mk"
-.include "../../print/cups15/buildlink3.mk"
+.include "../../print/cups/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

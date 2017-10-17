@@ -29,7 +29,7 @@ post-install:
 		${DESTDIR}${PREFIX}/share/pixmaps
 
 .include "../../devel/boost-headers/buildlink3.mk"
-.include "../../print/cups15/buildlink3.mk"
+.include "../../print/cups/buildlink3.mk"
 .include "../../print/podofo/buildlink3.mk"
 .include "../../graphics/cairo/buildlink3.mk"
 .include "../../mk/jpeg.buildlink3.mk"

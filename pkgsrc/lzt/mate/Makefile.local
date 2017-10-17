@@ -17,6 +17,9 @@ pre-fetch:
 do-configure:
 	@true
 
+build-clean:
+	@true
+
 do-build:
 	@true
 

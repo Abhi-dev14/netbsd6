@@ -53,4 +53,6 @@ DEPENDS+=	mate-utils>=${VERSION}:../../misc/mate-utils
 DEPENDS+=	mozo>=${VERSION}:../../x11/mozo
 DEPENDS+=	pluma>=${VERSION}:../../editors/pluma
 
+PLIST_SRC+=	PLIST
+
 .include "../../mk/bsd.pkg.mk"

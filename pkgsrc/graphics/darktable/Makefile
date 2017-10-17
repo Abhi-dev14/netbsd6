@@ -79,7 +79,7 @@ BUILDLINK_API_DEPENDS.sqlite3+= sqlite3>=3.7.14.1nb1
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../net/flickcurl/buildlink3.mk"
 .include "../../net/libsoup/buildlink3.mk"
-.include "../../print/cups15/buildlink3.mk"
+.include "../../print/cups/buildlink3.mk"
 #.include "../../security/gnome-keyring/buildlink3.mk"
 .include "../../sysutils/desktop-file-utils/desktopdb.mk"
 .include "../../textproc/pugixml/buildlink3.mk"

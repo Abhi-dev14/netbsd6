@@ -81,7 +81,7 @@ post-install:
 .include "../../graphics/tiff/buildlink3.mk"
 .include "../../net/avahi/buildlink3.mk"
 BUILDLINK_ABI_DEPENDS.cups+=	cups>=1.7.4nb1
-.include "../../print/cups15/buildlink3.mk"
+.include "../../print/cups/buildlink3.mk"
 .include "../../print/ghostscript/buildlink3.mk"
 .include "../../print/ijs/buildlink3.mk"
 .include "../../print/poppler-cpp/buildlink3.mk"

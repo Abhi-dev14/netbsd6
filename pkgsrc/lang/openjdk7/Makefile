@@ -295,6 +295,6 @@ MAKE_ENV+=	STRIP=${PREFIX}/bin/gstrip
 .include "../../fonts/fontconfig/buildlink3.mk"
 .include "../../graphics/freetype2/buildlink3.mk"
 BUILDLINK_DEPMETHOD.cups?=	build
-.include "../../print/cups15/buildlink3.mk"
+.include "../../print/cups/buildlink3.mk"
 .include "../../mk/java-env.mk"
 .include "../../mk/bsd.pkg.mk"

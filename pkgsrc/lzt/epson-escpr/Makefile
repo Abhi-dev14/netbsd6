@@ -33,7 +33,7 @@ post-install:
 
 BUILDLINK_DEPMETHOD.dos2unix?=	build
 
-.include "../../print/cups15/buildlink3.mk"
+.include "../../print/cups/buildlink3.mk"
 #.include "../../converters/dos2unix/buildlink3.mk"
 
 .include "../../mk/bsd.pkg.mk"

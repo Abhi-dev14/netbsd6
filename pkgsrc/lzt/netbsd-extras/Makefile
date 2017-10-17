@@ -31,7 +31,7 @@ DEPENDS+=	py27-sysctl:../../devel/py-sysctl
 DEPENDS+=	sudo:../../security/sudo
 DEPENDS+=	netcat:../../net/netcat
 DEPENDS+=	rsync:../../net/rsync
-DEPENDS+=	cups:../../print/cups15
+DEPENDS+=	cups:../../print/cups
 
 
 do-extract:

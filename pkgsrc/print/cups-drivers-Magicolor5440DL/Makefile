@@ -33,5 +33,5 @@ post-extract:
 
 .include "../../graphics/lcms/buildlink3.mk"
 .include "../../graphics/jbigkit/buildlink3.mk"
-.include "../../print/cups15/buildlink3.mk"
+.include "../../print/cups/buildlink3.mk"
 .include "../../mk/bsd.pkg.mk"

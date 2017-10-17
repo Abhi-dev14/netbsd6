@@ -71,7 +71,7 @@ BUILDLINK_PKGSRCDIR.libreoffice?=	../../lzt/libreoffice52
 .include "../../multimedia/gst-plugins1-base/buildlink3.mk"
 .include "../../net/libcmis/buildlink3.mk"
 .include "../../net/mDNSResponder/buildlink3.mk"
-.include "../../print/cups15/buildlink3.mk"
+.include "../../print/cups/buildlink3.mk"
 .include "../../print/poppler-cpp/buildlink3.mk"
 .include "../../print/poppler-includes/buildlink3.mk"
 .include "../../security/openssl/buildlink3.mk"
