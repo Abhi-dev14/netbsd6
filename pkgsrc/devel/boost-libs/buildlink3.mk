@@ -17,7 +17,7 @@ GCC_REQD+=		4.6
 .elif ${LOWER_VENDOR} == "redhat"
 GCC_REQD+=		4.4
 .else
-GCC_REQD+=		4.5
+GCC_REQD+=		4.8
 .endif
 
 .include "../../devel/boost-headers/buildlink3.mk"
