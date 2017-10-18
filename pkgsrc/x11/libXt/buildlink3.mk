@@ -26,6 +26,7 @@ BUILDLINK_PKGSRCDIR.libXt?=	../../x11/libXt
 # XXX
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libICE/buildlink3.mk"
+.include "../../x11/libXdamage/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/kbproto/buildlink3.mk"
 .include "../../x11/xproto/buildlink3.mk"

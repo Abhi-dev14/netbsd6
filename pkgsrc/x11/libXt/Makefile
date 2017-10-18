@@ -35,6 +35,7 @@ CONFIGURE_ENV+=		ac_cv_path_RAWCPP="${PREFIX}/bin/tradcpp -Uunix"
 
 .include "../../x11/libSM/buildlink3.mk"
 .include "../../x11/libICE/buildlink3.mk"
+.include "../../x11/libXdamage/buildlink3.mk"
 .include "../../x11/libX11/buildlink3.mk"
 .include "../../x11/kbproto/buildlink3.mk"
 .include "../../x11/xproto/buildlink3.mk"
